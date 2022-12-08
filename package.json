@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "type":"module",
-  "files":["dist", "dist/style.css"],
-  "main":"./dist/test-component-lib.cjs",
-  "module":"./dist/test-component-lib.js",
+  "files":["src"],
+  "main":"./src/index.ts",
   "exports":{
 	  ".": {
 		  "import": "./dist/test-component-lib.js",
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
+    "build": "vue-tsc --declaration --emitDeclarationOnly",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit"
