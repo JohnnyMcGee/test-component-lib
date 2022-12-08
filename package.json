@@ -5,12 +5,6 @@
   "type":"module",
   "files":["src"],
   "main":"./src/index.ts",
-  "exports":{
-	  ".": {
-		  "import": "./dist/test-component-lib.js",
-		  "require":"./dist/test-component-lib.umd.cjs"
-	  }
-  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --declaration --emitDeclarationOnly",
